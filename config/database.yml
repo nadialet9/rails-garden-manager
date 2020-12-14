@@ -74,10 +74,12 @@ test:
 #   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
 #
 # You can use this database configuration with:
-#
 production:
   <<: *default
-  database: rails-garden-manager_production
-  username: rails-garden-manager_production
-  password: <%= ENV['rails-garden-manager_DATABASE_PASSWORD'] %>
-  url: <%= ENV['POSTGRESQL_ADDON_URI] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
+# #
+# production:
+#   <<: *default
+#   database: rails-garden-manager_production
+#   username: rails-garden-manager_production
+#   password: <%= ENV['rails-garden-manager_DATABASE_PASSWORD'] %>
